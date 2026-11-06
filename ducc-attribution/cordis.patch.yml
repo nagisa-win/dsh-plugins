@@ -1,8 +1,0 @@
-- insert:
-    - id: ducc-attribution
-      name: '@local/ducc-attribution'
-      config:
-        providerIds:
-          - oneapi
-          - one-api
-          - one-api-openai
