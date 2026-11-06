@@ -41,4 +41,3 @@
 
 - 不要放在会话工作目录（如 `default-workspace`）或 `Documents/` 下。
 - 打包完成后用 `plugin_manager install_bundle` 安装，`target` 传该插件目录的绝对路径。
-- 已安装的三个本地插件：`ducc-attribution`、`codex-mcp`、`caffeinate-lock`。
