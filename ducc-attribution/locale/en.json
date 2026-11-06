@@ -1,6 +1,0 @@
-{
-  "meta": {
-    "title": "DUCC Attribution",
-    "description": "Adds Comate attribution headers to internal model requests and reports usage events."
-  }
-}
