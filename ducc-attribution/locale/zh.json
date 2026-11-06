@@ -1,6 +1,0 @@
-{
-  "meta": {
-    "title": "DUCC 归因",
-    "description": "为内部模型请求附加 Comate 归因请求头，并上报使用事件。"
-  }
-}
