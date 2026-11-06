@@ -1,0 +1,40 @@
+{
+  "name": "@local/dsh-blue-fat-fish",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.webp",
+    "./assets/*": "./lib/assets/*"
+  },
+  "icon": "./icon.webp",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.webp",
+    "avatar.gif",
+    "lib",
+    "locale"
+  ],
+  "description": "把侧栏和欢迎页的品牌标识替换为 DeepSleep：手写笔迹字标与动图头像。",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,348 @@
+/* Auto-generated from the shipped palette; do not hand-edit. */
+body {
+  --dsw-alias-bg-base: #FEF7FF;
+  --dsw-alias-bg-document-preview: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-bg-document-selection: color-mix(in srgb, var(--dsw-static-blue-500) 40%, transparent);
+  --dsw-alias-label-document-preview: var(--dsw-static-neutral-bluish-700);
+  --dsw-alias-bg-layer-1: #FFFFFF;
+  --dsw-alias-bg-layer-2: #F3EDF7;
+  --dsw-alias-bg-layer-3: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-bg-mask-1: #0000003d;
+  --dsw-alias-bg-mask-2: #0000001f;
+  --dsw-alias-bg-mask-3: #0000007a;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-bg-mask-drop: #ffffffb3;
+  --dsw-alias-bg-module-platform: var(--dsw-static-neutral-bluish-60);
+  --dsw-alias-bg-multi-select: var(--dsw-static-neutral-bluish-60);
+  --dsw-alias-bg-overlay: #ECE6F0;
+  --dsw-alias-bg-skeleton: #0000000a;
+  --dsw-alias-border-inverted2: #0000;
+  --dsw-alias-border-inverted: #0000;
+  --dsw-alias-border-l1: rgba(202, 196, 208, 0.55);
+  --dsw-alias-border-l2-darkmode-thin: #0000001a;
+  --dsw-alias-border-l2: rgba(202, 196, 208, 0.85);
+  --dsw-alias-border-l3: #0000001f;
+  --dsw-alias-border-l4: #00000029;
+  --dsw-alias-brand-primary-invert: var(--dsw-static-neutral-bluish-1000);
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #4176e6;
+  --dsw-alias-brand-primary: #6750A4;
+  --dsw-alias-brand-text: var(--dsw-static-neutral-bluish-1000);
+  --dsw-alias-button-contrast-fill: var(--dsw-static-neutral-bluish-700);
+  --dsw-alias-button-elevated-fill: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-button-floating-fill: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-button-floating-hover: var(--dsw-static-neutral-bluish-75);
+  --dsw-alias-button-ghost-active-border: var(--dsw-static-neutral-bluish-500);
+  --dsw-alias-button-ghost-active-fill: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-button-ghost-active-hover: var(--dsw-static-neutral-bluish-150);
+  --dsw-alias-button-info-fill: var(--dsw-static-deepseek-500);
+  --dsw-alias-button-info-hover: var(--dsw-static-deepseek-400);
+  --dsw-alias-button-primary-dimmed: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-button-primary-fill: var(--dsw-alias-brand-primary);
+  --dsw-alias-button-primary-hover: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-button-tool-bar-fill-invisible: #1f1f1f5c;
+  --dsw-alias-button-tool-bar-fill: #54555780;
+  --dsw-alias-button-tool-bar-hover: #54555799;
+  --dsw-alias-illustration-background: var(--dsw-static-neutral-bluish-55);
+  --dsw-alias-illustration-backing: var(--dsw-static-neutral-bluish-310);
+  --dsw-alias-illustration-detail: var(--dsw-static-neutral-bluish-310);
+  --dsw-alias-illustration-inset: var(--dsw-alias-illustration-surface);
+  --dsw-alias-illustration-shadow: var(--dsw-alias-illustration-surface);
+  --dsw-alias-illustration-surface: var(--dsw-static-neutral-bluish-90);
+  --dsw-alias-interactive-bg-active: #2631481a;
+  --dsw-alias-interactive-bg-hover-accent: #26314824;
+  --dsw-alias-interactive-bg-hover-danger: #ec13130d;
+  --dsw-alias-interactive-bg-hover-solid: var(--dsw-static-neutral-bluish-75);
+  --dsw-alias-interactive-bg-hover: #2631480f;
+  --dsw-alias-label-caption: var(--dsw-static-neutral-bluish-400);
+  --dsw-alias-label-deep-diving: color-mix(in srgb, var(--dsw-static-deepseek-500) 70%, var(--dsw-static-blue-950));
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, var(--dsw-static-deepseek-500) 30%, var(--dsw-static-blue-950));
+  --dsw-alias-label-dimmed: var(--dsw-static-neutral-bluish-200);
+  --dsw-alias-label-primary-bluish: var(--dsw-static-blue-900);
+  --dsw-alias-label-primary-dimmed: var(--dsw-static-neutral-bluish-950);
+  --dsw-alias-label-primary-foreground: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-label-primary-inverted: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-label-primary: #1D1B20;
+  --dsw-alias-label-secondary: #49454F;
+  --dsw-alias-label-shimmer: color-mix(in srgb, var(--dsw-static-neutral-1000) 30%, transparent);
+  --dsw-alias-label-tertiary: var(--dsw-static-neutral-bluish-600);
+  --dsw-alias-menu-icon: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-link: var(--dsw-static-deepseek-500);
+  --dsw-alias-markdown-citation: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-markdown-code-block-banner: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-markdown-code-block: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-markdown-code-segment-selected: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-markdown-code-segment-unselected: var(--dsw-static-neutral-bluish-75);
+  --dsw-alias-markdown-inline-code: var(--dsw-static-neutral-50);
+  --dsw-alias-markdown-placeholder: var(--dsw-static-neutral-bluish-60);
+  --dsw-alias-markdown-tag: var(--dsw-static-neutral-bluish-75);
+  --dsw-alias-scrollbar-bg-l1: var(--dsw-static-neutral-200);
+  --dsw-alias-scrollbar-bg-l2: var(--dsw-static-neutral-200);
+  --dsw-alias-scrollbar-hover-l1: var(--dsw-static-neutral-300);
+  --dsw-alias-scrollbar-hover-l2: var(--dsw-static-neutral-300);
+  --dsw-alias-state-business-primary: var(--dsw-static-deepseek-500);
+  --dsw-alias-state-business-tertiary: var(--dsw-static-deepseek-100);
+  --dsw-alias-code-diff-added: var(--dsw-static-green-500-a08);
+  --dsw-alias-code-diff-deleted: var(--dsw-static-red-600-a08);
+  --dsw-alias-file-diff-added-bg: #e6f4e7;
+  --dsw-alias-file-diff-added-gutter: #edf7ed;
+  --dsw-alias-file-diff-added-marker: #01a241;
+  --dsw-alias-file-diff-deleted-bg: #fce6e2;
+  --dsw-alias-file-diff-deleted-gutter: #fdece9;
+  --dsw-alias-file-diff-deleted-marker: #ba2723;
+  --dsw-alias-state-done-primary: var(--dsw-static-violet-600);
+  --dsw-alias-state-error-primary: #B3261E;
+  --dsw-alias-state-error-secondary: var(--dsw-static-red-400);
+  --dsw-alias-state-idle-primary: #79747E;
+  --dsw-alias-state-success-primary: #2E6B3E;
+  --dsw-alias-state-success-secondary: var(--dsw-static-green-400);
+  --dsw-alias-state-success-tertiary: var(--dsw-static-green-100);
+  --dsw-alias-state-warn-label: var(--dsw-static-amber-600);
+  --dsw-alias-state-warn-primary: #8B5000;
+  --dsw-alias-state-warn-secondary: var(--dsw-static-amber-400);
+  --dsw-alias-state-warn-tertiary: var(--dsw-static-amber-100);
+  --dsw-alias-switch-thumb: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-toast-bg: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-toast-label: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-tooltip-bg: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, var(--dsw-alias-tooltip-bg), white 18%);
+  --dsw-alias-turn-trigger-bg: var(--dsw-alias-markdown-code-block);
+  --dsw-alias-turn-trigger-bg-hover: var(--dsw-alias-interactive-bg-hover);
+  --dsw-alias-menu-group-header-fill: #f8f9faf0;
+}
+
+body[data-ds-dark-theme] {
+  --dsw-alias-bg-base: #141218;
+  --dsw-alias-bg-document-preview: var(--dsw-static-neutral-bluish-950);
+  --dsw-alias-bg-document-selection: color-mix(in srgb, var(--dsw-static-blue-500) 40%, transparent);
+  --dsw-alias-label-document-preview: var(--dsw-static-neutral-bluish-300);
+  --dsw-alias-bg-layer-1: #0F0D13;
+  --dsw-alias-bg-layer-2: #211F26;
+  --dsw-alias-bg-layer-3: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-bg-mask-1: #00000080;
+  --dsw-alias-bg-mask-2: #0003;
+  --dsw-alias-bg-mask-3: #0000007a;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-bg-mask-drop: #272730b3;
+  --dsw-alias-bg-module-platform: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-bg-multi-select: var(--dsw-static-neutral-850);
+  --dsw-alias-bg-overlay: #2B2930;
+  --dsw-alias-bg-skeleton: #ffffff14;
+  --dsw-alias-border-inverted2: #ffffff14;
+  --dsw-alias-border-inverted: #ffffff0f;
+  --dsw-alias-border-l1: rgba(73, 69, 79, 0.55);
+  --dsw-alias-border-l2-darkmode-thin: #ffffff0f;
+  --dsw-alias-border-l2: rgba(73, 69, 79, 0.85);
+  --dsw-alias-border-l3: #ffffff29;
+  --dsw-alias-border-l4: #fff3;
+  --dsw-alias-brand-primary-invert: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-brand-primary-new-colorprimary-new-color: var(--dsw-static-deepseek-450);
+  --dsw-alias-brand-primary: #D0BCFF;
+  --dsw-alias-brand-text: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-button-contrast-fill: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-button-elevated-fill: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-button-floating-fill: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-button-floating-hover: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-button-ghost-active-border: var(--dsw-static-neutral-bluish-600);
+  --dsw-alias-button-ghost-active-fill: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-button-ghost-active-hover: var(--dsw-static-neutral-bluish-700);
+  --dsw-alias-button-info-fill: var(--dsw-static-deepseek-400);
+  --dsw-alias-button-info-hover: var(--dsw-static-deepseek-500);
+  --dsw-alias-button-primary-dimmed: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-button-primary-fill: var(--dsw-alias-brand-primary);
+  --dsw-alias-button-primary-hover: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-button-tool-bar-fill-invisible: #1f1f1f5c;
+  --dsw-alias-button-tool-bar-fill: #54555780;
+  --dsw-alias-button-tool-bar-hover: #54555799;
+  --dsw-alias-illustration-background: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-illustration-backing: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-illustration-detail: var(--dsw-static-neutral-bluish-600);
+  --dsw-alias-illustration-inset: var(--dsw-alias-illustration-backing);
+  --dsw-alias-illustration-shadow: var(--dsw-alias-illustration-backing);
+  --dsw-alias-illustration-surface: var(--dsw-static-neutral-bluish-700);
+  --dsw-alias-interactive-bg-active: #ffffff24;
+  --dsw-alias-interactive-bg-hover-accent: #ffffff3d;
+  --dsw-alias-interactive-bg-hover-danger: #f25a5a26;
+  --dsw-alias-interactive-bg-hover-solid: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-interactive-bg-hover: #ffffff14;
+  --dsw-alias-label-caption: var(--dsw-static-neutral-bluish-600);
+  --dsw-alias-label-deep-diving: color-mix(in srgb, var(--dsw-static-deepseek-450) 55%, var(--dsw-static-neutral-bluish-400));
+  --dsw-alias-label-deep-diving-shimmer: color-mix(in srgb, var(--dsw-static-blue-300) 65%, var(--dsw-static-deepseek-400));
+  --dsw-alias-label-dimmed: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-label-primary-bluish: var(--dsw-static-neutral-bluish-50);
+  --dsw-alias-label-primary-dimmed: var(--dsw-static-neutral-bluish-100);
+  --dsw-alias-label-primary-foreground: var(--dsw-static-neutral-bluish-1000);
+  --dsw-alias-label-primary-inverted: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-label-primary: #E6E0E9;
+  --dsw-alias-label-secondary: #CAC4D0;
+  --dsw-alias-label-shimmer: color-mix(in srgb, var(--dsw-static-neutral-00) 45%, transparent);
+  --dsw-alias-label-tertiary: var(--dsw-static-neutral-bluish-400);
+  --dsw-alias-menu-icon: var(--dsw-alias-label-primary-dimmed);
+  --dsw-alias-link: var(--dsw-static-deepseek-400);
+  --dsw-alias-markdown-citation: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-markdown-code-block-banner: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-markdown-code-block: var(--dsw-static-neutral-bluish-900);
+  --dsw-alias-markdown-code-segment-selected: var(--dsw-static-neutral-bluish-800);
+  --dsw-alias-markdown-code-segment-unselected: var(--dsw-static-neutral-bluish-900);
+  --dsw-alias-markdown-inline-code: var(--dsw-static-neutral-800);
+  --dsw-alias-markdown-placeholder: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-markdown-tag: var(--dsw-static-neutral-bluish-850);
+  --dsw-alias-scrollbar-bg-l1: var(--dsw-static-neutral-700);
+  --dsw-alias-scrollbar-bg-l2: var(--dsw-static-neutral-600);
+  --dsw-alias-scrollbar-hover-l1: var(--dsw-static-neutral-600);
+  --dsw-alias-scrollbar-hover-l2: var(--dsw-static-neutral-550);
+  --dsw-alias-state-business-primary: var(--dsw-static-deepseek-400);
+  --dsw-alias-state-business-tertiary: var(--dsw-static-deepseek-800);
+  --dsw-alias-code-diff-added: var(--dsw-static-green-500-a12);
+  --dsw-alias-code-diff-deleted: var(--dsw-static-red-400-a12);
+  --dsw-alias-file-diff-added-bg: #1f3124;
+  --dsw-alias-file-diff-added-gutter: #132016;
+  --dsw-alias-file-diff-added-marker: #41c977;
+  --dsw-alias-file-diff-deleted-bg: #3c1f1b;
+  --dsw-alias-file-diff-deleted-gutter: #28130e;
+  --dsw-alias-file-diff-deleted-marker: #fa423e;
+  --dsw-alias-state-done-primary: var(--dsw-static-violet-400);
+  --dsw-alias-state-error-primary: #F2B8B5;
+  --dsw-alias-state-error-secondary: var(--dsw-static-red-400);
+  --dsw-alias-state-idle-primary: #938F99;
+  --dsw-alias-state-success-primary: #8FD9A2;
+  --dsw-alias-state-success-secondary: var(--dsw-static-green-400);
+  --dsw-alias-state-success-tertiary: var(--dsw-static-green-900);
+  --dsw-alias-state-warn-label: var(--dsw-static-amber-600);
+  --dsw-alias-state-warn-primary: #FFB77C;
+  --dsw-alias-state-warn-secondary: var(--dsw-static-amber-400);
+  --dsw-alias-state-warn-tertiary: var(--dsw-static-amber-900);
+  --dsw-alias-switch-thumb: var(--dsw-static-neutral-bluish-400);
+  --dsw-alias-toast-bg: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-toast-label: var(--dsw-static-neutral-bluish-00);
+  --dsw-alias-turn-trigger-bg: var(--dsw-alias-interactive-bg-hover);
+  --dsw-alias-turn-trigger-bg-hover: var(--dsw-alias-interactive-bg-active);
+  --dsw-alias-tooltip-bg: var(--dsw-static-neutral-bluish-750);
+  --dsw-alias-tooltip-key-bg: color-mix(in srgb, var(--dsw-alias-tooltip-bg), white 18%);
+  --dsw-alias-menu-group-header-fill: #303136f0;
+}
+/* Material You / jelly theme for DeepSeek Harness.
+ *
+ * Two layers, deliberately separate:
+ *   1. Alias-token overrides (below) — the 108 --dsw-alias-* tokens the shell
+ *      reads. Registered through ctx.theme so they fold into the active
+ *      snapshot and follow light/dark automatically.
+ *   2. Geometry and motion (this stylesheet) — radius scale, elevation,
+ *      and the squishy easing the shell's own --ds-ease-* tokens feed.
+ */
+
+/* ---- Jelly geometry -------------------------------------------------------
+ * DSH resolves every component radius from --dsw-radius-*. Raising the scale
+ * and keeping the shipped superellipse() corner-shape turns the whole shell
+ * gummy without touching a single component rule.
+ */
+:root {
+  --dsw-radius-xs: 8px;
+  --dsw-radius-sm: 14px;
+  --dsw-radius-md: 20px;
+  --dsw-radius-lg: 28px;
+  --dsw-radius-xl: 36px;
+  --dsw-radius-panel: 40px;
+
+  /* Squishy easing: overshoot then settle, the signature jelly feel. */
+  --ds-ease-in-out: cubic-bezier(.34, 1.56, .64, 1);
+  --ds-transition-duration: .28s;
+  --ds-transition-duration-fast: .14s;
+  --ds-transition-duration-slow: .42s;
+
+  /* Candy elevation: tinted, soft, and never a hard grey shadow. */
+  --dsw-jelly-shadow-1: 0 1px 2px rgba(103, 80, 164, .10), 0 2px 8px rgba(103, 80, 164, .08);
+  --dsw-jelly-shadow-2: 0 2px 6px rgba(103, 80, 164, .12), 0 8px 24px rgba(103, 80, 164, .12);
+  --dsw-jelly-shadow-3: 0 4px 12px rgba(103, 80, 164, .16), 0 16px 48px rgba(103, 80, 164, .16);
+}
+
+/* Dark mode wants deeper, less milky shadows. */
+body[data-ds-dark-theme] {
+  --dsw-jelly-shadow-1: 0 1px 2px rgba(0, 0, 0, .40), 0 2px 8px rgba(0, 0, 0, .32);
+  --dsw-jelly-shadow-2: 0 2px 6px rgba(0, 0, 0, .44), 0 8px 24px rgba(0, 0, 0, .36);
+  --dsw-jelly-shadow-3: 0 4px 12px rgba(0, 0, 0, .48), 0 16px 48px rgba(0, 0, 0, .40);
+}
+
+/* ---- Press feedback -------------------------------------------------------
+ * A jelly theme lives on touch feedback: controls should visibly squish.
+ * Only transform/box-shadow are animated, so this stays on the compositor.
+ */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+label[for],
+summary {
+  /* DSH sizes buttons from its own component rules; giving the shell's own
+   * controls a pill silhouette is what makes the theme read as jelly rather
+   * than merely round-cornered cards. */
+  border-radius: var(--dsw-radius-sm);
+  transition:
+    transform var(--ds-transition-duration-fast) var(--ds-ease-in-out),
+    box-shadow var(--ds-transition-duration) var(--ds-ease-in-out),
+    background-color var(--ds-transition-duration) var(--ds-ease-in-out),
+    border-color var(--ds-transition-duration) var(--ds-ease-in-out);
+}
+
+button:not(:disabled):active,
+[role="button"]:not([aria-disabled="true"]):active,
+summary:active {
+  transform: scale(.96);
+}
+
+/* ---- Surfaces: soft cards instead of flat panels -------------------------- */
+[class*="card"],
+[class*="panel"],
+[class*="surface"] {
+  box-shadow: var(--dsw-jelly-shadow-1);
+}
+
+/* ---- Inputs: pill-shaped, candy focus ring -------------------------------- */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  border-radius: var(--dsw-radius-sm);
+  transition:
+    border-color var(--ds-transition-duration) var(--ds-ease-in-out),
+    box-shadow var(--ds-transition-duration) var(--ds-ease-in-out);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  box-shadow: 0 0 0 3px rgba(103, 80, 164, .22);
+}
+
+/* ---- Scrollbars: rounded and slim ----------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---- Selection: candy tint ------------------------------------------------ */
+::selection {
+  background: rgba(103, 80, 164, .22);
+}
+
+/* ---- Reduced motion: keep the colour, drop the squish --------------------- */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ds-ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --ds-transition-duration: .01ms;
+    --ds-transition-duration-fast: .01ms;
+    --ds-transition-duration-slow: .01ms;
+  }
+
+  button:not(:disabled):active,
+  [role="button"]:not([aria-disabled="true"]):active,
+  summary:active {
+    transform: none;
+  }
+}

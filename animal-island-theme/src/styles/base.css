@@ -1,0 +1,161 @@
+/**
+ * Animal Island theme: control and typography layer.
+ *
+ * Colors, radii and font stacks live in src/tokens and go through
+ * ctx.theme.overrideTokens. This sheet only covers what tokens cannot express:
+ * elevation recipes, control silhouettes, and CJK text shaping.
+ *
+ * Every rule is scoped to body[data-ai-island]. The attribute is added by the
+ * plugin and removed on dispose, and its specificity (0,1,1) is enough to win
+ * over the host's `body` / `body *` token rules without !important.
+ *
+ * Selectors use ARIA roles, data attributes and native elements. Where a
+ * CSS-module class is unavoidable, the match is on the local name only
+ * ("_primary" at a word boundary), never on the build hash.
+ */
+
+/* ---- Local palette -------------------------------------------------------- */
+body[data-ai-island] {
+  --ai-teal: #19c8b9;
+  --ai-teal-ink: #0e8f83;
+  --ai-grass: #86d67a;
+  --ai-grass-ink: #6fba2c;
+  --ai-sand: #ddd2bb;
+  --ai-sand-ink: #c4b89e;
+  --ai-cream: #fffbe8;
+  --ai-lip: #e6dabd;
+  --ai-drop: rgb(107 74 43 / 16%);
+  --ai-primary-lip: #4f3317;
+  --ai-focus: #f5c31c;
+
+  /* Host shadow scale, re-cut as soft island drops. */
+  --dsw-shadow-lv1: 0 2px 0 0 var(--ai-lip);
+  --dsw-shadow-lv1-blur: 0 4px 12px 0 var(--ai-drop);
+  --dsw-shadow-lv2: 0 2px 0 0 var(--ai-lip), 0 6px 16px -6px var(--ai-drop);
+  --dsw-shadow-lv3: 0 3px 0 0 var(--ai-primary-lip), 0 16px 36px -12px var(--ai-drop);
+
+  /* Code highlighting in the island palette. */
+  --shiki-token-keyword: #c8506c;
+  --shiki-token-string: #4d8f1c;
+  --shiki-token-string-expression: #5a9e1e;
+  --shiki-token-function: #7e4fc9;
+  --shiki-token-constant: #0e8f83;
+  --shiki-token-parameter: #c0681a;
+  --shiki-token-comment: #a3916f;
+  --shiki-token-punctuation: #8a7556;
+  --shiki-token-link: #0e8f83;
+}
+
+body[data-ai-island][data-ds-dark-theme] {
+  --ai-teal: #3dd4c6;
+  --ai-teal-ink: #3dd4c6;
+  --ai-sand: #574e40;
+  --ai-sand-ink: #6e624f;
+  --ai-cream: #f3ead2;
+  --ai-lip: rgb(0 0 0 / 34%);
+  --ai-drop: rgb(0 0 0 / 50%);
+  --ai-primary-lip: #a89878;
+
+  --shiki-token-keyword: #f8a6b2;
+  --shiki-token-string: #a6d97a;
+  --shiki-token-string-expression: #b8e08c;
+  --shiki-token-function: #c9a7f5;
+  --shiki-token-constant: #7fded2;
+  --shiki-token-parameter: #f5b97a;
+  --shiki-token-comment: #9a8a6e;
+  --shiki-token-punctuation: #cbbd9f;
+  --shiki-token-link: #7fded2;
+}
+
+/**
+ * Elevation recipes. The host redefines these on every element (`body *`), so
+ * the override must sit on the same elements. --dsw-elevation-stroke-color is
+ * deliberately left alone: components set it locally to tune their outline.
+ */
+body[data-ai-island],
+body[data-ai-island] * {
+  --dsw-elevation-stroke: 0 0 0 1px var(--dsw-elevation-stroke-color);
+  --dsw-elevation-panel: var(--dsw-elevation-stroke), 0 2px 0 0 var(--ai-lip), 0 8px 20px -10px var(--ai-drop);
+  --dsw-elevation-soft: var(--dsw-elevation-stroke), 0 3px 0 0 var(--ai-lip), 0 12px 28px -12px var(--ai-drop);
+  --dsw-elevation-prominent: var(--dsw-elevation-stroke), 0 4px 0 0 var(--ai-lip), 0 18px 40px -14px var(--ai-drop);
+}
+
+/* ---- Typography and CJK shaping ------------------------------------------ */
+body[data-ai-island] {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Strict kinsoku: no line may start with 。，、」 or end with 「（. */
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/**
+ * Chromium 140+ inserts a 1/8em gap between CJK and Latin/digits, and trims
+ * the blank half of full-width punctuation at line start and between adjacent
+ * marks (）（ ，「). Both need the CJK font's halt/chws features; PingFang,
+ * Hiragino and Noto CJK carry them.
+ */
+@supports (text-autospace: normal) {
+  body[data-ai-island] {
+    text-autospace: normal;
+  }
+}
+
+@supports (text-spacing-trim: normal) {
+  body[data-ai-island] {
+    text-spacing-trim: normal;
+  }
+}
+
+/* Monospace text keeps a strict grid: no autospace, no trimming, no tracking. */
+body[data-ai-island] :is(pre, code, kbd, samp, .xterm, [contenteditable="true"] code) {
+  letter-spacing: 0;
+  text-autospace: no-autospace;
+  text-spacing-trim: space-all;
+}
+
+body[data-ai-island] :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-wrap: pretty;
+}
+
+/* Balanced paragraph endings avoid a lone CJK character on the last line. */
+body[data-ai-island] :is(p, li, blockquote, td, th) {
+  text-wrap: pretty;
+}
+
+body[data-ai-island] :is(strong, b) {
+  font-weight: 700;
+}
+
+body[data-ai-island] a[href] {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: from-font;
+}
+
+body[data-ai-island] li::marker {
+  color: var(--ai-teal-ink);
+  font-weight: 700;
+}
+
+body[data-ai-island] blockquote {
+  border-inline-start-color: var(--ai-teal);
+}
+
+body[data-ai-island] hr {
+  height: 0;
+  border: 0;
+  border-top: 2px dashed var(--dsw-alias-border-l4);
+  background: none;
+}
+
+body[data-ai-island] ::selection {
+  background: color-mix(in srgb, var(--ai-teal) 30%, transparent);
+}
+
+body[data-ai-island] :is(input, textarea, [contenteditable="true"]) {
+  caret-color: var(--ai-teal-ink);
+}

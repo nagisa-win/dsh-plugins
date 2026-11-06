@@ -1,0 +1,16 @@
+{
+  "//": "Geometry and type tokens. Values are identical in both schemes; overrideTokens still requires a { light, dark } pair, which the build script expands.",
+  "--dsw-radius-xs": "6px",
+  "--dsw-radius-sm": "10px",
+  "--dsw-radius-md": "14px",
+  "--dsw-radius-lg": "18px",
+  "--dsw-radius-xl": "24px",
+  "--dsw-radius-panel": "30px",
+  "--dsw-corner-shape": "round",
+  "--ds-transition-duration": ".22s",
+  "--ds-transition-duration-fast": ".12s",
+  "--ds-transition-duration-slow": ".34s",
+  "--dsh-font-family-text-default": "\"AI Nunito\", -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", \"Noto Sans CJK SC\", \"Source Han Sans SC\", \"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif",
+  "--dsw-font-family-brand": "\"AI Nunito\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+  "--dsh-font-family-code-default": "\"SF Mono\", \"JetBrains Mono\", \"Fira Code\", Menlo, Consolas, \"Liberation Mono\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", monospace"
+}

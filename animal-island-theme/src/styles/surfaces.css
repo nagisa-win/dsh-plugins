@@ -1,0 +1,42 @@
+/**
+ * Animal Island theme: surfaces.
+ *
+ * Large areas use the cream / sand ramp from tokens. This sheet adds the
+ * dashed-edge and lip details that make them read as island cards.
+ */
+
+/* ---- Composer card ---------------------------------------------------------- */
+/** The composer is the most visible surface: a cream card on a sand lip. */
+body[data-ai-island] [class*="_card"]:has([contenteditable="true"]) {
+  --dsw-elevation-stroke-color: var(--ai-sand);
+}
+
+body[data-ai-island] [class*="_card"]:has([contenteditable="true"]):focus-within {
+  --dsw-elevation-stroke-color: var(--ai-teal);
+}
+
+/* ---- Sidebar ---------------------------------------------------------------- */
+body[data-ai-island] nav [aria-current="page"],
+body[data-ai-island] nav [aria-selected="true"] {
+  font-weight: 700;
+}
+
+/* ---- Markdown blocks -------------------------------------------------------- */
+body[data-ai-island] .md-code-block,
+body[data-ai-island] pre {
+  border-radius: var(--dsw-radius-md);
+}
+
+body[data-ai-island] :is(table) {
+  border-radius: var(--dsw-radius-sm);
+}
+
+body[data-ai-island] th {
+  font-weight: 700;
+}
+
+/* ---- Dialog headers --------------------------------------------------------- */
+body[data-ai-island] [role="dialog"] :is(h1, h2, h3) {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}

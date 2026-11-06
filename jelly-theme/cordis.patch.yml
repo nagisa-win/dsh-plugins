@@ -1,0 +1,3 @@
+- insert:
+    - id: jelly-theme
+      name: '@local/dsh-jelly-theme'

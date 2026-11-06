@@ -1,0 +1,186 @@
+/**
+ * Animal Island theme: controls.
+ *
+ * Silhouettes follow animal-island-ui: pill buttons with a solid bottom lip,
+ * inset switches with a cream thumb, cream cards, and a yellow focus ring.
+ */
+
+/* ---- Focus ring ------------------------------------------------------------ */
+body[data-ai-island] {
+  --dsw-focus-ring-color: var(--ai-focus);
+  --dsw-focus-ring-width: 2px;
+}
+
+body[data-ai-island] :focus-visible {
+  outline-color: var(--ai-focus);
+  outline-offset: 2px;
+}
+
+/* ---- Buttons --------------------------------------------------------------- */
+body[data-ai-island] :is(button, [role="button"], summary) {
+  transition:
+    transform var(--ds-transition-duration-fast) ease,
+    box-shadow var(--ds-transition-duration) ease,
+    background-color var(--ds-transition-duration) ease,
+    color var(--ds-transition-duration) ease;
+}
+
+/** Primary action: filled brown pill sitting on a darker lip. */
+body[data-ai-island] button:is([class*="_primary_"], [class*="_primary "]) {
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 0 0 var(--ai-primary-lip);
+}
+
+body[data-ai-island] button:is([class*="_primary_"], [class*="_primary "]):hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 0 var(--ai-primary-lip);
+}
+
+body[data-ai-island] button:is([class*="_primary_"], [class*="_primary "]):active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 0 var(--ai-primary-lip);
+}
+
+/** Outline action: cream pill with a sand edge and lip. */
+body[data-ai-island] button:is([class*="_outline_"], [class*="_outline "]) {
+  border-radius: 999px;
+  background: var(--dsw-alias-bg-layer-3);
+  box-shadow:
+    inset 0 0 0 1.5px var(--ai-sand),
+    0 2px 0 0 var(--ai-sand);
+}
+
+body[data-ai-island] button:is([class*="_outline_"], [class*="_outline "]):hover:not(:disabled) {
+  color: var(--ai-teal-ink);
+  box-shadow:
+    inset 0 0 0 1.5px var(--ai-teal),
+    0 2px 0 0 var(--ai-teal);
+}
+
+body[data-ai-island] button:is([class*="_outline_"], [class*="_outline "]):active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: inset 0 0 0 1.5px var(--ai-teal);
+}
+
+/** Generic press feedback for every other button: a small, quick sink. */
+body[data-ai-island] :is(button, [role="button"]):not(:disabled):active {
+  transform: translateY(1px);
+}
+
+/* ---- Switch ---------------------------------------------------------------- */
+body[data-ai-island] [role="switch"] {
+  background: var(--ai-sand);
+  box-shadow:
+    inset 0 0 0 2px var(--ai-sand-ink),
+    inset 0 2px 4px rgb(114 93 66 / 18%);
+  transition:
+    background-color var(--ds-transition-duration) ease,
+    box-shadow var(--ds-transition-duration) ease;
+}
+
+body[data-ai-island] [role="switch"][aria-checked="true"] {
+  background: var(--ai-grass);
+  box-shadow:
+    inset 0 0 0 2px var(--ai-grass-ink),
+    inset 0 2px 4px rgb(90 158 30 / 22%);
+}
+
+body[data-ai-island] [role="switch"] > * {
+  background: var(--ai-cream) !important;
+  box-shadow: 0 1px 2px rgb(61 52 40 / 25%);
+  transition: transform var(--ds-transition-duration) cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+/* ---- Checkbox, radio, range ------------------------------------------------ */
+body[data-ai-island] :is(input[type="checkbox"], input[type="radio"], input[type="range"], progress) {
+  accent-color: var(--ai-grass-ink);
+}
+
+/* ---- Text inputs ----------------------------------------------------------- */
+body[data-ai-island] :is(
+    input:not([type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"]),
+    select,
+    textarea
+  ):not([class*="lexical"], [contenteditable]) {
+  border-radius: var(--dsw-radius-md);
+}
+
+body[data-ai-island] :is(input, select, textarea):focus-visible {
+  border-color: var(--ai-teal) !important;
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ai-teal) 22%, transparent);
+}
+
+body[data-ai-island] ::placeholder {
+  color: var(--dsw-alias-label-caption);
+  opacity: 1;
+}
+
+/* ---- Tabs ------------------------------------------------------------------ */
+body[data-ai-island] [role="tab"][aria-selected="true"] {
+  font-weight: 700;
+}
+
+body[data-ai-island] [role="tablist"] [role="tab"] {
+  border-radius: 999px;
+}
+
+/* ---- Menus and dialogs ----------------------------------------------------- */
+body[data-ai-island] [role="menu"] {
+  border-radius: var(--dsw-radius-lg);
+}
+
+body[data-ai-island] [role="menuitem"] {
+  border-radius: var(--dsw-radius-sm);
+}
+
+body[data-ai-island] [role="dialog"][aria-modal="true"] {
+  background: var(--dsw-alias-bg-layer-2);
+}
+
+/* ---- Tooltip and toast ----------------------------------------------------- */
+body[data-ai-island] [role="tooltip"] {
+  border-radius: var(--dsw-radius-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+body[data-ai-island] :is([role="status"], [role="alert"])[class*="toast"] {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ---- Tags and pills -------------------------------------------------------- */
+body[data-ai-island] [data-tone] {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+body[data-ai-island] [data-tone="info"] {
+  color: var(--ai-teal-ink);
+  background: color-mix(in srgb, var(--ai-teal) 14%, transparent);
+}
+
+/* ---- Code ------------------------------------------------------------------ */
+body[data-ai-island] :not(pre) > code {
+  padding: 0.1em 0.42em;
+  border-radius: 6px;
+}
+
+/* ---- Scrollbars ------------------------------------------------------------ */
+body[data-ai-island] ::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+}
+
+/* ---- Reduced motion -------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  body[data-ai-island] :is(button, [role="button"], [role="switch"] > *) {
+    transition: none;
+  }
+
+  body[data-ai-island] :is(button, [role="button"]):active {
+    transform: none !important;
+  }
+}

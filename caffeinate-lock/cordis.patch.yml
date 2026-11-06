@@ -1,0 +1,4 @@
+- insert:
+    - id: caffeinate-lock
+      name: '@local/caffeinate-lock'
+      config: {}

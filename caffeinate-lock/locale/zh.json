@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "休眠锁",
+    "description": "有会话在运行时用 caffeinate 保持系统休眠锁，全部结束才释放。"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@local/dsh-animal-island-theme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Animal Island style theme: cream and teal palette, pill controls, Nunito Latin text with tuned CJK spacing.",
+  "license": "MIT",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "assets/fonts/OFL.txt",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  }
+}

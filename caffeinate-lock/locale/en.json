@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sleep Lock",
+    "description": "Holds a system idle-sleep lock with caffeinate while any session is running."
+  }
+}

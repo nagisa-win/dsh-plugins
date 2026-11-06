@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Codex MCP 工具",
+    "description": "把 Codex 里的 chrome-devtools、playwright、github 三个 MCP server 接入本 profile。"
+  }
+}

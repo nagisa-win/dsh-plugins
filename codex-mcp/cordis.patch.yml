@@ -1,0 +1,29 @@
+- insert:
+    - id: mcp-chrome-devtools
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: chrome-devtools
+        transport: stdio
+        command: npx
+        args: ['-y', 'chrome-devtools-mcp@latest']
+        failOnStartupError: false
+
+    - id: mcp-playwright
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: playwright
+        transport: stdio
+        command: npx
+        args: ['-y', '@playwright/mcp', '--headless']
+        failOnStartupError: false
+
+    - id: mcp-github
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: github
+        transport: stdio
+        command: sh
+        args:
+          - -c
+          - 'GITHUB_PERSONAL_ACCESS_TOKEN="$(gh auth token)" exec npx -y @modelcontextprotocol/server-github'
+        failOnStartupError: false
